@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(56, 55, 55);
+}
+
+img {
+    display: block;
+    max-height: 100%;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.contenedor {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #f8f8f8;
+    width: 70%;
+}
+
+/* Estilos para la sección de discografía */
+
+#section2 ol {
+    list-style-type: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#section2 li {
+    text-align: center;
+    width: 33%;
+    margin-bottom: 10px;
+}
+
+#section2 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#section2 a:hover {
+    color: #ff6600;
+}
+
+.contededor-album {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contededor-album img,
+.contededor-album iframe {
+    width: calc(33.33% - 10px);
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(56, 55, 55);
+}
+
+h1,
+footer h2 {
+    color: #f8f8f8;
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+    #section2 ol {
+        flex-direction: column;
+    }
+
+    #section2 li {
+        width: 100%;
+    }
+
+    .contededor-album {
+        flex-direction: column;
+    }
+
+    .contededor-album img,
+    .contededor-album iframe {
+        width: 50%;    
+        margin: 10px auto 0 auto;    
+    }
+    
+}
